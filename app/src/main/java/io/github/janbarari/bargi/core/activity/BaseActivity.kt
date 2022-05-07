@@ -13,7 +13,7 @@ abstract class BaseActivity<VB: ViewBinding>(@LayoutRes private val layoutId: In
     abstract fun getLayoutBinding(v: View): VB
 
     private var _binding: VB? = null
-    val binding: VB = _binding!!
+    val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -15,7 +15,7 @@ abstract class BaseFragment<VB : ViewBinding>(
     abstract fun getBindingLayout(v: View): VB
 
     private var _binding: VB? = null
-    val binding: VB = _binding!!
+    val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
