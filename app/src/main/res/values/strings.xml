@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Bargi Sample App</string>
     <string name="login_to_bargi">LOGIN\nTO\nBARGI</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connection_established">Connection Established</string>
+    <string name="connection_failed">Connection Failed</string>
 </resources>

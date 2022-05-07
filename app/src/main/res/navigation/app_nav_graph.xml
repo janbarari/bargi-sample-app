@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/login_fragment"
-        android:name="io.github.janbarari.bargi.ui.login.LoginFragment"
+        android:name="io.github.janbarari.bargi.ui.authentication.login.LoginFragment"
         android:label="Login to Bargi">
 
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/signup_fragment"
-        android:name="io.github.janbarari.bargi.ui.signup.SignupFragment"
+        android:name="io.github.janbarari.bargi.ui.authentication.signup.SignupFragment"
         android:label="Signup in Bargi">
 
         <action
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/forgotpassword_fragment"
-        android:name="io.github.janbarari.bargi.ui.forgotpassword.ForgotPasswordFragment"
+        android:name="io.github.janbarari.bargi.ui.authentication.forgotpassword.ForgotPasswordFragment"
         android:label="Forgot My Password">
 
         <action

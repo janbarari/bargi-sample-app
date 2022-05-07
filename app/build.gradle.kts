@@ -54,6 +54,9 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.40.3")
     kapt("com.google.dagger:hilt-android-compiler:2.40.3")
 
+    implementation("io.reactivex.rxjava3:rxjava:3.1.4")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.0")
+
     testImplementation("junit:junit:4.13.2")
 
 }
