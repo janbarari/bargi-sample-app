@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bargi Sample App</string>
+    <string name="login_to_bargi">LOGIN\nTO\nBARGI</string>
 </resources>

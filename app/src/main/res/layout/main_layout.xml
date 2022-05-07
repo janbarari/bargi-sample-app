@@ -1,8 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/orange"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:translationZ="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.05"
+        android:fontFamily="@font/coconut_house"
+        android:gravity="end"
+        android:text="This is BARGI SUPER AMAZING PLATFORM FOR ALL AUDIO COMPANIES"
+        android:textColor="@color/black"
+        android:textSize="100sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/coconut_house"
+        android:padding="24dp"
+        android:text="@string/login_to_bargi"
+        android:textColor="@color/black"
+        android:textSize="68sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/check_connection_button"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/black"
+        android:text="Check Connection"
+        android:textColor="@color/wheat"
+        app:cornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_screen"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Next Screen"
+        android:textColor="@color/wheat"
+        app:cornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_connection_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
