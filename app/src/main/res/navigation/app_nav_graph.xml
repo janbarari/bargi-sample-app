@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="io.github.janbarari.bargi.ui.login.LoginFragment"
+        android:label="Login to Bargi">
+
+        <action
+            android:id="@+id/goto_signup"
+            app:destination="@id/signup_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup_fragment"
+        android:name="io.github.janbarari.bargi.ui.signup.SignupFragment"
+        android:label="Signup in Bargi">
+
+        <action
+            android:id="@+id/goto_forgot_my_password"
+            app:destination="@id/forgotpassword_fragment"
+            app:popUpTo="@+id/app_nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotpassword_fragment"
+        android:name="io.github.janbarari.bargi.ui.forgotpassword.ForgotPasswordFragment"
+        android:label="Forgot My Password">
+
+        <action
+            android:id="@+id/goto_login"
+            app:destination="@id/login_fragment"
+            app:popUpTo="@+id/app_nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

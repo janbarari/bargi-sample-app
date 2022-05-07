@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BargiSampleApp">
 
-        <activity android:name=".core.ui.HostActivity"
+        <activity android:name="io.github.janbarari.bargi.ui.HostActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
